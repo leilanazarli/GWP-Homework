@@ -1,0 +1,33 @@
+.light {background-size: cover;
+     background-repeat: no-repeat;
+ }
+.all {
+    display: flex;   
+}
+.signup {
+    float: left;
+    width: 300px;
+    margin: 300px;
+}
+a{text-decoration-line: none;
+}
+a:visited {
+    color: green;
+  }
+  .sub:visited{ color: #73AD21;}
+#learn{background-color:rgb(138, 78, 134);}
+#learn:hover{ background-color: rgb(220, 185, 212);}
+.register
+{ float: right;
+    opacity: 0.7;
+    height: 400px;
+background-color: rgb(249, 167, 231);
+border-color: antiquewhite ;
+margin: 100px;
+    width: 25%;
+    border: 3px solid #73AD21;
+    padding: 10px;}
+    #submit:hover {background-color: rgb(131, 101, 134);
+    }
+    h1{font-style: italic; 
+        font-color:30px;}
