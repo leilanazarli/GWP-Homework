@@ -1,7 +1,7 @@
 body {
     background-color: gray;
 }
-h1{ font-size: 40pt;}
+h1{ font-size: 30pt;}
 .e { accent-color: yellow;}
 .radio {accent-color: red;}
 .a {
@@ -54,7 +54,7 @@ background-color: rebeccapurple;}
   button {background-color: blueviolet;}
   a { accent-color: red;
 color: white;}
-.size{font-size: 20pt;
+.size{font-size: 10pt;
 }
-input { font-size: 30pt;}
-button { font-size: 20pt;}
+input { font-size: 20pt;}
+button { font-size: 10pt;}
