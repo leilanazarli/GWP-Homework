@@ -1,0 +1,244 @@
+*{ margin: 0;
+padding: 0 ;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+.container{
+ size: 1200px;
+margin: 0 auto;
+padding: 0 30px;
+width: 1000px;
+position: relative;
+}
+nav ul li a { text-transform: uppercase;
+color: rgb(9, 9, 121);}
+nav ul li a:hover { color: whitesmoke;
+background-color: rgb(202, 129, 39);
+padding: 10px;
+box-sizing: border-box;
+border-radius:30%;
+transition: .5s;}
+header{background-color:rgb(255, 241, 214);
+height: 400px;
+}
+span{ color: orange ;
+    text-shadow: 2px 2px 5px olive;
+}
+nav { display: flex;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+  background-color: rgb(255, 241, 214);
+margin: 0px;
+padding: 0%;
+z-index: 1;}
+.icon{
+    display: flex;
+    gap:20px;}
+.fa-brands{ gap:inherit;}
+.container nav ul {
+    display: flex;
+    column-gap: 50px;
+}
+p { color: rgb(19, 19, 168);}
+h1 { color: rgb(21, 21, 109);}
+.upper {
+    text-transform: uppercase;
+   padding: 6px;
+    border: 2px solid rgb(231, 178, 78);
+    background-color: rgb(228, 171, 66);
+    border-radius: 10px;
+    display: flex;
+    width: 100px;}
+.font { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; }
+a { color: rgb(3, 3, 111);}
+.home { display: flex;
+    justify-content: space-between;
+    padding: 90px;
+box-sizing: border-box;}
+.border { width: 200px;
+    border-radius:10px;
+    border: 3px solid orange;
+}
+ .manimg{ width: 200px;
+    border-radius:10px;
+    top: -15px;
+    left: -15px;
+position: relative; }
+.womanimg{width: 200px;
+    border-radius: 10px;
+    top: -15px;
+    right: -15px;
+    position: relative;
+   }
+
+.abouts { display: flex;
+    height: 450px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+   column-gap: 10px;
+}
+.about1{padding: 20px;}
+.about2{width:500px;} 
+.imjohn::before{
+    content: "";
+   position: absolute;
+   background-color: orange;
+   height: 3px;
+  display: block;
+  width: 50px;}
+ .line::after{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 3px;
+    width: 60px;
+    display: block;}
+footer{ 
+    background-color: rgb(69, 61, 61);
+    height: 90px;
+    gap:20px; }
+.footer1{
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:inherit;
+padding-top: 20px;}
+.footer2{
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 20px;}
+.services{background-color: rgb(228, 228, 228);
+    height: 450px;
+   text-align: center; 
+padding-top: 20px;}  
+.service::after{content: "";
+    display: inline-block;
+     background-color: orange;
+     height: 3px;
+     width: 60px;
+     text-align: center;
+    }
+.underline{content: "";
+   display: inline-block;
+    background-color: orange;
+    height: 3px;
+    width: 60px;
+    text-align: center;}
+.cards{display: flex;
+column-gap: 80px;
+justify-content: center;
+padding-top: 10px;}
+.card{border: 2px solid transparent;
+    background-color: rgb(255, 255, 255);
+width: 260px;
+padding: 10px;}
+h2{ 
+    padding: 10px;
+    color: rgb(21, 21, 109);}
+.upper:hover{
+    color: rgb(169, 171, 180);
+    background-color: bisque;
+ }
+.card:hover{
+    background-color: rgb(225, 182, 73);
+box-shadow: 5px 10px 5px burlywood;
+color: rgb(132, 7, 86);}
+.card:hover p{
+    color:white;}
+.card:hover  h2{
+    color: white;}
+.card:hover a{
+    color: white;}
+.card:hover .underline{
+    background-color: white;}
+.checkbtn {font-size: 30px;
+color:  orange ;
+float: right;
+line-height: 40px;
+margin-right: 40px;
+cursor: pointer;
+display: none;}
+#check { display: none;}
+ @media only screen and (max-width: 991px){
+    header{
+        height: 700px;
+    
+ }
+ .checkbtn{ display: none;}
+ nav ul li{ padding-top: 20px;
+}
+nav{display: flex;
+    align-items: center;}
+.home{ display:block; } 
+.about1{ display: flex;
+    justify-content: center;
+align-items: center;}
+.abouts{display: block;
+height: 700px;}
+.cards{
+    display:inline-block;
+    text-align:center;
+   }
+footer{display:block;
+}
+.home2{
+    margin-top: 30px;
+}
+.services{
+    height: 1000px;
+} 
+}
+@media only screen and (max-width: 767px){
+.checkbtn { 
+        display:contents; 
+        }
+   nav{nav{display: flex;
+    align-items: center;}
+}
+.container { margin:0;
+padding: 0%;
+width: 100%;}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+background-color: rgb(206, 166, 47);
+top: 80px;
+left: -100%;
+transition: all .5s;
+text-align: center;
+align-items: center;
+flex-direction: column;
+z-index: 10;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a { 
+    font-size: 20px;
+}
+#check:checked ~ ul{
+    left: 0%;
+ }
+ #check:checked ~ .checkbtn i::before{ 
+    content: ""\f00d"";
+ }
+}
+
+
