@@ -41,6 +41,8 @@ nav ul li:hover {
 }
 
 .sec1 {
+        margin: 0 50px;
+    padding: 0;
     position: relative;
     display:flex;
   justify-content: center;
@@ -66,7 +68,8 @@ span{
     color: rgb(41, 30, 4);
      text-shadow: 2px 2px 5px olive;
 }
-.sec2{ 
+.sec2{     margin: 0 50px;
+    padding: 0;
     background-image: url(/aesthetic\ \(9\).jpg);
     background-position: center;
     background-attachment: fixed;
@@ -147,6 +150,7 @@ h1{
         display: none;
     }
 .sec1 {
+    margin:0;
     background-image:url(bc2.jpg) ;
     background-position: center;
     background-attachment: fixed;
@@ -154,6 +158,9 @@ h1{
     background-size: cover;
     height: 800px;
 }
+    .sec2 {
+    margin:0;
+    }
     .home{ 
         display: block;
     }
