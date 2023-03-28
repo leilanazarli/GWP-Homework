@@ -1,5 +1,5 @@
 # html 
-  12.Responsvie-page -https://luxury-marshmallow-5dad28.netlify.app/
+  12.Responsvie-page -https://gregarious-crisp-7ef167.netlify.app
 
   11.-ResponsiveTwoSection - https://shiny-narwhal-79fc16.netlify.app
 
