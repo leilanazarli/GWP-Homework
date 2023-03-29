@@ -13,11 +13,12 @@
 
   07.Css_Background - https://genuine-cascaron-654875.netlify.app
   
-  06.Css-Selectors - 
+  06.Css-Selectors - https://friendly-paprenjak-1cfedc.netlify.app
   
-  05.
+  05-FirstHtmlFullSite - https://eclectic-bavarois-79a9bb.netlify.app
   
   04-HtmlFormTable - https://chic-fudge-d012ca.netlify.app/
   
-                     https://transcendent-pie-67d6b3.netlify.app/
+  https://transcendent-pie-67d6b3.netlify.app/
+  03-HTML - https://amazing-moxie-dbfce9.netlify.app/
                   
