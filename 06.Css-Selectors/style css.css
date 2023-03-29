@@ -1,0 +1,23 @@
+h1 {font-size: 80px;
+}
+.register { width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+
+}
+.user { width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+}.change { width: 100vw;
+    height: 100vh;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+}
