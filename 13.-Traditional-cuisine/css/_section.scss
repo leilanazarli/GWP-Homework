@@ -1,0 +1,40 @@
+section{
+    .container{
+        .content{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            .text{
+                width: 50%;
+                p{
+                    font-family: 'Fasthand', cursive;
+                    text-decoration: line-through;
+                    color: coral;
+                }
+                h1{
+                    font-size: 60px;
+                    font-family: 'Roboto Slab', serif;
+                    text-transform: uppercase;
+                }
+                button{
+                    margin-top: 15px;
+                    padding:5px 13px;
+                    background-color: coral;
+                    border: transparent;
+
+                }
+            }
+            .img{
+                width: 50%;
+                transition: 5s;
+                padding-top:190px ;
+                &:hover{
+                    transform: scale(0.5) translate(100%, 100%);
+                }
+
+                
+            }
+        }
+    }
+
+} 

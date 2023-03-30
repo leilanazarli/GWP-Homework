@@ -1,0 +1,39 @@
+header {
+    background-image: url(/backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:750px;
+    .container{
+    nav{
+        height: 60px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                a{
+                    color: white;
+                    padding: 7px;
+                    border-radius: 5%;
+                    position: relative;
+                    &:hover::after {
+                        position: absolute;
+                        content: "";
+                        height: 2px ;
+                        width: 25px;
+                        background-color: red;
+                        bottom: 0;
+                        left: 35%;
+                    }
+                    img{
+                        margin-top: 20px;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+}
