@@ -26,14 +26,17 @@ section{
             }
             .img{
                 width: 50%;
-                 padding-top:190px ;
+                padding-top:190px ;
                 .img{
-                transition: 5s;
+
                
+                transition: 5s;
+                
                 &:hover{
                     transform: scale(0.5) translate(100%, 100%);
                 }
-                }
+            }
+
                 
             }
         }
