@@ -1,7 +1,7 @@
 # html 
-  13.-Traditional-cuisine- https://symphonious-muffin-912441.netlify.app/
+  13.-Traditional-cuisine- https://darling-selkie-ae7acd.netlify.app/
 
-  12.Responsvie-page -https://gregarious-crisp-7ef167.netlify.app
+ 12.Responsvie-page -https://gregarious-crisp-7ef167.netlify.app
 
   11.-ResponsiveTwoSection - https://shiny-narwhal-79fc16.netlify.app
 
