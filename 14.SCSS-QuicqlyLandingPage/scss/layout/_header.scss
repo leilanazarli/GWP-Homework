@@ -1,0 +1,54 @@
+header{
+    background-color: $bg-color;
+    .header{
+        @include flexBox();
+        height: 75px;
+        color:$text-white;
+        nav{
+            ul{ 
+                @include flexBox();
+                gap:350px;
+                .logo{
+                    font-family: $font-fam;
+                }
+                .menua{
+                    @include flexBox();
+                    gap: 32px;
+                    li{
+                        width: 70px;
+                        a{ 
+                            color:$text-white;
+                            font-family:$font-fam;
+                            
+                        }
+                    }
+                }
+                          
+                .menubutton{
+                    @include flexBox();
+                    gap: 10px;
+                    .signup{
+                        width: 82px;
+                        background-color: $bt-light;
+                        color:$bg-dark ;
+                        @extend %button-header;
+                    }
+                   .login{
+                       width: 72px;
+                       background-color: $bg-color;
+                       color: $text-white;
+                       @extend %button-header;
+                      }
+                  }   
+              }
+          }
+      }
+  }
+                
+                
+                     
+                        
+
+                
+                     
+    

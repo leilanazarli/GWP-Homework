@@ -1,0 +1,494 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400&display=swap");
+* {
+  text-decoration: none;
+  font-family: "Epilogue";
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  font-size: 16px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+header .header nav ul .menubutton .login, header .header nav ul .menubutton .signup {
+  height: 41px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 0px transparent;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section .container .left .button .signup, section .container .left .button .learnmore {
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 16px 36px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+header {
+  background-color: rgb(32, 72, 79);
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  color: rgb(255, 255, 255);
+}
+header .header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 350px;
+}
+header .header nav ul .logo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+header .header nav ul .menua {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+header .header nav ul .menua li {
+  width: 70px;
+}
+header .header nav ul .menua li a {
+  color: rgb(255, 255, 255);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+header .header nav ul .menubutton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+header .header nav ul .menubutton .signup {
+  width: 82px;
+  background-color: rgb(184, 228, 218);
+  color: rgb(7, 33, 37);
+}
+header .header nav ul .menubutton .login {
+  width: 72px;
+  background-color: rgb(32, 72, 79);
+  color: rgb(255, 255, 255);
+}
+
+section {
+  background-color: rgb(250, 250, 250);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 94px;
+  height: 825px;
+  position: relative;
+  z-index: 1;
+}
+section .container .left {
+  width: 50%;
+}
+section .container .left h5 {
+  color: rgb(32, 72, 79);
+  margin-bottom: 24px;
+}
+section .container .left h1 {
+  color: rgb(7, 33, 37);
+  margin-bottom: 32px;
+}
+section .container .left p {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(7, 33, 37);
+  margin-bottom: 48px;
+}
+section .container .left .button .signup {
+  background-color: rgb(32, 72, 79);
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+  border: 0px transparent;
+}
+section .container .left .button .learnmore {
+  border: 1px solid rgba(32, 72, 79, 0.1);
+  color: rgb(7, 33, 37);
+  background-color: white;
+}
+section .container .after {
+  position: absolute;
+  left: 21%;
+  top: 271px;
+  z-index: -1;
+}
+section .container .right .all .girl {
+  position: relative;
+}
+section .container .right .all .border {
+  position: absolute;
+  left: 60%;
+  top: 14%;
+  z-index: -1;
+}
+section .container .right .avatar {
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0px 4px 40px rgba(138, 138, 138, 0.04);
+  background-color: rgb(255, 255, 255);
+  gap: 8px;
+  padding: 10px 21px;
+  top: 189px;
+  left: 75%;
+}
+section .container .right .avatar .avatartext {
+  margin-top: 7px;
+}
+section .container .right .avatar .avatartext h4 {
+  color: rgb(7, 33, 37);
+  margin-bottom: 7px;
+}
+section .container .right .avatar .avatartext p {
+  color: rgb(7, 33, 37);
+}
+section .container .right .littlecontent {
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0px 4px 40px rgba(138, 138, 138, 0.04);
+  background-color: rgb(255, 255, 255);
+  width: 432px;
+  height: 193px;
+  top: 496px;
+  left: 830px;
+  padding: 28px 35px;
+  box-sizing: border-box;
+  gap: 19px;
+}
+section .container .right .littlecontent .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section .container .right .littlecontent .text .mockup {
+  color: transparent;
+  height: 11px;
+  background: rgba(32, 72, 79, 0.1);
+  border-radius: 12px;
+}
+section .container .right .littlecontent .text .a {
+  width: 273px;
+}
+section .container .right .littlecontent .text .b {
+  width: 182px;
+}
+section .container .right .littlecontent .text img {
+  width: 110px;
+  height: 37px;
+}
+
+.teamsec {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 1199px;
+}
+.teamsec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+.teamsec .container .text h2 {
+  width: 560px;
+  color: rgb(7, 33, 37);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.teamsec .container .text p {
+  width: 500px;
+  text-align: center;
+}
+.teamsec .container .firstrow, .teamsec .container .secondrow {
+  display: flex;
+  gap: 50px;
+}
+.teamsec .container .firstrow .card, .teamsec .container .secondrow .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.teamsec .container .firstrow .card .icon, .teamsec .container .secondrow .card .icon {
+  display: flex;
+  gap: 10px;
+}
+.teamsec .container .firstrow .card .icon i, .teamsec .container .secondrow .card .icon i {
+  border: 1px solid rgb(198, 197, 197);
+  border-radius: 50%;
+  padding: 10px;
+  color: rgb(7, 33, 37);
+}
+
+footer {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: rgb(7, 33, 37);
+  height: 385px;
+}
+footer .container .footer {
+  padding: 60px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+footer .container .footer .left h3 {
+  color: rgb(255, 255, 255);
+}
+footer .container .footer .left p {
+  color: rgb(255, 255, 255);
+}
+footer .container .footer .left .top, footer .container .footer .left .bottom {
+  display: flex;
+  gap: 20px;
+}
+footer .container .footer .left .top input[type=checkbox], footer .container .footer .left .bottom input[type=checkbox] {
+  accent-color: rgb(220, 242, 237);
+}
+footer .container .footer .left label {
+  width: 200px;
+}
+footer .container .footer .left .button #mail {
+  width: 250px;
+  height: 45px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid rgb(220, 242, 237);
+}
+footer .container .footer .left .button #mail::-moz-placeholder {
+  text-align: center;
+  color: rgba(32, 72, 79, 0.2);
+}
+footer .container .footer .left .button #mail::placeholder {
+  text-align: center;
+  color: rgba(32, 72, 79, 0.2);
+}
+footer .container .footer .left .button .signup {
+  width: 150px;
+  height: 45px;
+  background-color: rgb(184, 228, 218);
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid rgb(220, 242, 237);
+}
+footer .container .footer .right {
+  display: flex;
+  gap: 80px;
+}
+footer .container .footer .right .a h5, footer .container .footer .right p {
+  margin-bottom: 16px;
+}
+footer .container .footer .right h5 {
+  color: rgb(255, 255, 255);
+}
+footer .container .footer .right p {
+  color: rgb(220, 242, 237);
+}
+footer .container .border-bottom {
+  height: 0px;
+  width: 1440px;
+  border: 1px solid #DCF2ED;
+  opacity: 0.2;
+}
+footer .container .logo {
+  text-align: center;
+  margin-top: 14px;
+}
+footer .container .logo h4 {
+  color: rgb(255, 255, 255);
+}
+footer .container .logo h4 span {
+  color: rgb(220, 242, 237);
+}/*# sourceMappingURL=main.css.map */

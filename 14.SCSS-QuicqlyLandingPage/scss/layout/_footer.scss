@@ -1,0 +1,88 @@
+footer{
+    font-family: $font-fam;
+    background: $bg-dark;
+    height: 385px;
+    .container{
+        .footer{
+            padding: 60px 120px;
+            @include flexBox();
+
+            .left{
+                @include column();
+                gap: 31px;
+                h3{
+                    color: $text-white;
+                }
+                p{
+                    color: $text-white;
+                }
+                .top , .bottom{
+                    display: flex;
+                    gap: 20px;
+                    input[type="checkbox"] {
+                        accent-color: $primary-light;
+                    }
+                }
+                label{
+                 width: 200px;}
+                .button{
+                    #mail{
+                        width: 250px;
+                        height: 45px;
+                        box-sizing: border-box;
+                        background-color: $text-white;
+                        border-top-left-radius: 8px;
+                        border-bottom-left-radius: 8px;
+                        border: 1px solid $primary-light;
+                        &::placeholder{
+                            text-align: center;
+                        color: rgba(32, 72, 79, 0.2);
+                    }
+                    }
+
+                    .signup{
+                        width: 150px;
+                        height: 45px;
+                        background-color: $primary-green;
+                        border-bottom-right-radius: 8px;
+                        border-top-right-radius: 8px;
+                        border: 1px solid $primary-light;
+                    }
+
+                 }
+            }            
+            .right{
+                display: flex;
+                gap: 80px;
+                .a h5 , p{
+                    margin-bottom: 16px;
+                }
+                h5{
+                    color: $text-white;
+                }
+                p{
+                    color: $primary-light;
+                }
+            }
+        }
+        .border-bottom{
+            height: 0px;
+            width: 1440px;
+            border: 1px solid #DCF2ED;
+            opacity: 0.2;
+        }
+        .logo{
+            text-align: center;
+            margin-top: 14px;
+            h4{
+                color: $text-white;
+                span{ 
+                    color: $primary-light;
+                }
+            }
+        }
+    }
+}
+    
+            
+       
