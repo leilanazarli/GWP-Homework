@@ -1,7 +1,7 @@
 .teamsec{
     font-family: $font-fam;
     height: 1199px;
-    .container{
+    .contain{
         @include column();
         gap: 60px;
         align-items: center;
@@ -20,7 +20,7 @@
         .firstrow , .secondrow{
             display: flex;
             gap: 50px;
-            .card{
+            .kard{
                 @include column();
                 gap: 20px;
                 .icon{

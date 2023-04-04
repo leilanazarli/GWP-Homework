@@ -1,51 +1,86 @@
 header{
     background-color: $bg-color;
-    .header{
-        @include flexBox();
-        height: 75px;
-        color:$text-white;
-        nav{
-            ul{ 
+    position: sticky;
+    z-index: 2;
+    .contain{
+        .header{
+            @include flexBox();
+            height: 75px;
+            color:$text-white;
+            nav{
                 @include flexBox();
-                gap:350px;
+                gap:100px;
+                .al{
+                    display:none;
+                }
                 .logo{
                     font-family: $font-fam;
                 }
-                .menua{
+                ul{ 
+                @include flexBox();
+                gap:200px;
+                .menyu1{
                     @include flexBox();
                     gap: 32px;
                     li{
+                    
                         width: 70px;
                         a{ 
+                            text-decoration: none;
                             color:$text-white;
                             font-family:$font-fam;
-                            
                         }
                     }
                 }
                           
-                .menubutton{
+                .menyu2{
                     @include flexBox();
                     gap: 10px;
                     .signup{
-                        width: 82px;
+                        width: 92px;
                         background-color: $bt-light;
                         color:$bg-dark ;
                         @extend %button-header;
                     }
                    .login{
-                       width: 72px;
+                       width: 82px;
                        background-color: $bg-color;
                        color: $text-white;
                        @extend %button-header;
                       }
                   }   
               }
-          }
-      }
+            }
+        }
+    }
+}
+@media only screen and (max-width:991px) { 
+   nav{
+    gap:500px !important;
+    .al{
+    display: block !important;
+   }
+   }
+    ul {
+    li{
+        display: none;
+    }
+    .menyu2{
+        .signup , .login{
+        display: none;
+    }
+   }
   }
-                
-                
+}  
+@media only screen and (max-width:767px) {  
+    nav{
+        gap: 400px !important;
+        .al{
+            display: block !important;
+           }
+    }
+}      
+
                      
                         
 

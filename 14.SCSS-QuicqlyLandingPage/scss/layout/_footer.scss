@@ -1,12 +1,10 @@
 footer{
     font-family: $font-fam;
     background: $bg-dark;
-    height: 385px;
-    .container{
+    .contain{
         .footer{
-            padding: 60px 120px;
+            padding: 60px;
             @include flexBox();
-
             .left{
                 @include column();
                 gap: 31px;
@@ -26,8 +24,9 @@ footer{
                 label{
                  width: 200px;}
                 .button{
+                    display: flex;
                     #mail{
-                        width: 250px;
+                        width: 200px;
                         height: 45px;
                         box-sizing: border-box;
                         background-color: $text-white;
@@ -41,7 +40,7 @@ footer{
                     }
 
                     .signup{
-                        width: 150px;
+                        width: 100px;
                         height: 45px;
                         background-color: $primary-green;
                         border-bottom-right-radius: 8px;
@@ -53,7 +52,7 @@ footer{
             }            
             .right{
                 display: flex;
-                gap: 80px;
+                gap: 60px;
                 .a h5 , p{
                     margin-bottom: 16px;
                 }
@@ -67,7 +66,7 @@ footer{
         }
         .border-bottom{
             height: 0px;
-            width: 1440px;
+            width: 1200px;
             border: 1px solid #DCF2ED;
             opacity: 0.2;
         }
