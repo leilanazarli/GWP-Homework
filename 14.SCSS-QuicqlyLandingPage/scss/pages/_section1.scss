@@ -4,7 +4,7 @@ section{
     .contain{
         @include flexBox();
         padding: 80px;
-        height: 825px;
+        // height: 825px;
         position: relative;
         z-index: 1;
         .left{
@@ -43,7 +43,7 @@ section{
         .after{
             position: absolute;
             left: 24%;
-            top: 35%;
+            top: 32%;
             z-index: -1;
         }
          .right{
@@ -59,7 +59,7 @@ section{
                 border: none;
                 position: absolute;
                 left: 53%;
-                top: 14%;
+                top: 4%;
                 z-index: -1;
             }
            }  
@@ -119,8 +119,8 @@ section{
         flex-direction: column-reverse;
         .left{
             .after{
-                top: 55% !important;
-                left: 12% !important;
+                top: 60% !important;
+                left: 40% !important;
             }
         }
         .right{

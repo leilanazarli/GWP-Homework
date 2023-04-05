@@ -279,7 +279,7 @@ header .contain .header nav ul .menyu2 .login {
 }
 @media only screen and (max-width: 767px) {
   nav {
-    gap: 400px !important;
+    gap: 150px !important;
   }
   nav .al {
     display: block !important;
@@ -294,7 +294,6 @@ section .contain {
   justify-content: space-between;
   align-items: center;
   padding: 80px;
-  height: 825px;
   position: relative;
   z-index: 1;
 }
@@ -327,7 +326,7 @@ section .contain .left .button .learnmore {
 section .contain .after {
   position: absolute;
   left: 24%;
-  top: 35%;
+  top: 32%;
   z-index: -1;
 }
 section .contain .right .res {
@@ -340,7 +339,7 @@ section .contain .right .all .borde {
   border: none;
   position: absolute;
   left: 53%;
-  top: 14%;
+  top: 4%;
   z-index: -1;
 }
 section .contain .right .avatar {
@@ -409,8 +408,8 @@ section .contain .right .littlecontent .text img {
     flex-direction: column-reverse;
   }
   .contain .left .after {
-    top: 55% !important;
-    left: 12% !important;
+    top: 60% !important;
+    left: 40% !important;
   }
   .contain .right .res {
     display: block !important;
@@ -424,7 +423,6 @@ section .contain .right .littlecontent .text img {
 }
 .teamsec {
   font-family: "Plus Jakarta Sans", sans-serif;
-  height: 1199px;
 }
 .teamsec .contain {
   display: flex;
@@ -444,7 +442,6 @@ section .contain .right .littlecontent .text img {
 }
 .teamsec .contain .firstrow, .teamsec .contain .secondrow {
   display: flex;
-  gap: 50px;
 }
 .teamsec .contain .firstrow .kard, .teamsec .contain .secondrow .kard {
   display: flex;
@@ -535,7 +532,6 @@ footer .contain .footer .right p {
   color: rgb(220, 242, 237);
 }
 footer .contain .border-bottom {
-  height: 0px;
   width: 1200px;
   border: 1px solid #DCF2ED;
   opacity: 0.2;

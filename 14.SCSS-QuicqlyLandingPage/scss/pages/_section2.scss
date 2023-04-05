@@ -1,6 +1,6 @@
 .teamsec{
     font-family: $font-fam;
-    height: 1199px;
+    // height: 1199px;
     .contain{
         @include column();
         gap: 60px;
@@ -19,7 +19,7 @@
         }
         .firstrow , .secondrow{
             display: flex;
-            gap: 50px;
+            // gap: 50px;
             .kard{
                 @include column();
                 gap: 20px;
