@@ -1,5 +1,5 @@
 # html 
-  14.SCSS-QuicqlyLandingPage https://radiant-dragon-0be97b.netlify.app/
+  14.SCSS-QuicqlyLandingPage - https://classy-brioche-44b5fd.netlify.app/
  
   13.-Traditional-cuisine- https://comfy-halva-161942.netlify.app/
 
