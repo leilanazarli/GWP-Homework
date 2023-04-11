@@ -46,19 +46,19 @@ function sum_even_10() {
 console.log(sum_even_10());
    
  //  4.Multiply the odd numbers(e.g: 1,3,5...) in 17.
-    //     function multiplyOdd() {
-    //         let multiply = 0 ;
-    //         let a = 0
-    //         while(a<17){
-    //             if(a%2===1){
-    //                 multiply = multiply*a;
+        function multiplyOdd() {
+          let multiply = 1 ;
+            let a = 1
+           while(a<17){
+                 if(a%2===1){
+                     multiply = multiply*a;
 
-    //             }
-    //             a++; 
-    //         }
-    //         return multiply;
-    //     }
-    //  console.log(multiplyOdd());
+                 }
+               a++; 
+             }
+             return multiply;
+        }
+     console.log(multiplyOdd());
      
      //  5.Multiply numbers between 10 and 18.
      function multiply() {
