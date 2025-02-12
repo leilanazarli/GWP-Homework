@@ -2,11 +2,312 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/scss//main.css">
+    <title>Mamedov Rent A Car</title>
 </head>
 <body>
-    <script src="./loop.js"></script>
+    <div class="home">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top-left logos">
+                    <span>Mamedov Rent A Car</span>
+                    </div>
+                    <div class="header-top-right">
+                        <a href="tel:+994 055 296 54 50"><i class="fa-solid fa-phone"></i><span >+994 055 296 54 50</span></a>
+                        <span class="line">|</span>
+                        <a href="https://maps.app.goo.gl/BiraJu8YX1WmkHM56"><i class="fa-solid fa-location-dot"></i><span>Gəncə şəhər Fərhad Əliyev küçəsi </span></a>
+                        <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+             <div class="container">
+              <div class=" logo" style="font-size: 30px; color: white;display: none;">
+                Mamedov Rent A Car
+                </div>
+                
+                 <div class="header-bottom-left">
+                   <nav>
+                    <ul>
+                        <li><a href="./index.html" style="color: red;">əsas səhifə</a></li>
+                        <li><a href="./cars.html">Maşınlar</a></li>
+                        <li><a href="./favorites.html">Favorilər</a></li>
+                        <li><a href="./service.html">Xidmətlər</a></li>
+                        <li><a href="./aboutus.html">Haqqımızda</a></li>
+                        <li><a href="./contact.html">əlaqə</a></li>
+                      
+                    </ul>
+                   </nav>
+                 </div>
+                 <div class="burger-menu" onclick="toggleMenu()">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Mobil Menyu -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="close-btn" onclick="toggleMenu()">✖</span>
+  <ul>
+      <li><a href="./index.html" style="color: red;">Əsas səhifə</a></li>
+      <li><a href="./cars.html">Maşınlar</a></li>
+      <li><a href="./favorites.html">Favorilər</a></li>
+      <li><a href="./service.html">Xidmətlər</a></li>
+      <li><a href="./aboutus.html">Haqqımızda</a></li>
+      <li><a href="./contact.html">Əlaqə</a></li>
+  </ul>
+</div>
+
+        <section class="home-section1">
+              <div id="carouselExampleDark" class="carousel  slide" data-bs-ride="carousel" data-aos="zoom-in">
+                <!-- <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 15px;height: 15px;border-radius: 50%;border:4px solid white ; background-color: transparent;"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" style="width: 15px;height: 15px;border-radius: 50%;border:4px solid white ; background-color: transparent;"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="width: 15px;height: 15px;border-radius: 50%;border:4px solid white ; background-color: transparent;"></button>
+                </div> -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/img/home img 1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <div class="container">
+                        <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
+                        <p>O zaman doğru məkandasan.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000" >
+                    <img src="./assets/img/home img 2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <div class="container ">
+                        <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
+                        <p>O zaman doğru məkandasan.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/h1-rev-img-3b.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <div class="container">
+                        <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
+                        <p>O zaman doğru məkandasan.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+                <!-- <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="indicator active"  aria-current="true" aria-label="Slide 1" style="width: 15px;height: 15px;border-radius: 50%;border:4px solid white ; background-color: transparent;"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="indicator" onclick="changeSlide(1)" aria-label="Slide 2" style="width: 15px;height: 15px;border-radius: 50%;border:4px solid white ; background-color: transparent;"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"  class="indicator" onclick="changeSlide(2)" aria-label="Slide 3" style="width: 15px;height: 15px;border-radius: 50%;border:4px solid white ; background-color: transparent;"></button>
+                </div> -->
+               <!-- Custom Indicators -->
+    <!-- <div class="carousel-indicators">
+      <span class="indicator active" onclick="changeSlide(0)"></span>
+      <span class="indicator" onclick="changeSlide(1)"></span>
+      <span class="indicator" onclick="changeSlide(2)"></span>
+  </div> -->
+              
+              </div>
+           
+        </section>
+   
+        
+       
+        <section class="home-section3">
+            <div class="container">
+                <div class="section3-title">
+                  <h1>Seçimlərin yüksək müxtəlifliyi</h1>
+                  <span>Ən yaxşı seçimlərin</span>
+                </div>
+                <div class="row g-1">
+                  <div class="col-12 col-md-3 col-sm-6 card-1">
+                   <div class="card-left">
+                     <div class="card-img">
+                        <img src="./assets/img/pngwing.com (10).png" alt="">
+                     </div>
+                      <div class="card-title">
+                      <h1>Econom</h1>
+                      <h2>40 <span>AZN</span></h2>
+                      <p>-dən başlayan qiymətlər</p>
+                     </div>
+                   </div>
+                   <div class="card-right">
+                    <a href="./car-class.html" class="btn btn-danger" id="econom-btn">Daxil ol</a>
+                   </div>
+                  </div>
+                  <div class="col-12 col-md-3 col-sm-6  card-2">
+                   <div class="card-left">
+                     <div class="card-img">
+                        <img src="./assets/img/pngwing.com (11).png" alt="">
+                     </div>
+                      <div class="card-title">
+                      <h1>Comfort</h1>
+                      <h2>60 <span>AZN</span></h2>
+                      <p>-dən başlayan qiymətlər</p>
+                     </div>
+                   </div>
+                   <div class="card-right">
+                    <a href="./car-class.html" class="btn btn-danger" id="comfort-btn">Daxil ol</a>
+
+                   </div>
+                  </div>
+                  <div class="col-12  col-md-3  col-sm-6 card-3">
+                   <div class="card-left">
+                     <div class="card-img">
+                        <img src="./assets/img/pngwing.com (9).png" alt="">
+                     </div>
+                      <div class="card-title">
+                      <h1>SUV</h1>
+                      <h2>90 <span>AZN</span></h2>
+                      <p>-dən başlayan qiymətlər</p>
+                     </div>
+                   </div>
+                   <div class="card-right">
+                    <a href="./car-class.html" class="btn btn-danger" id="suv-btn">Daxil ol</a>
+
+                   </div>
+                  </div>
+                  <div class="col-12 col-md-3  col-sm-6 card-4">
+                   <div class="card-left">
+                     <div class="card-img">
+                        <img src="./assets/img/pngwing.com (8).png" alt="">
+                     </div>
+                      <div class="card-title">
+                      <h1>Business</h1>
+                      <h2>110 <span>AZN</span></h2>
+                      <p>-dən başlayan qiymətlər</p>
+                     </div>
+                   </div>
+                   <div class="card-right">
+                    <a href="./car-class.html" class="btn btn-danger" id="Business-btn">Daxil ol</a>
+
+                   </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+       
+            
+      <section class="home-section2">
+        <div class="home-section2-text container">
+          <h3>Popular Arenda Maşınları</h3>
+          <a href="./cars.html"> <span> / </span>  Bütün maşınlara keçid et </a>
+        </div>
+        <div class="home-section2-card " >
+          <div class="row  g-3 m-0" >
+            <div class="owl-slider "  >
+             <div id="carousel" class="owl-carousel row g-5 " >
+             </div> 
+            </div> 
+          </div> 
+        </div> 
+      </section> 
+        
+          <section class="rental-section home-section4">
+            <div class="image-container">
+                <img src="./assets/img/h3-img-10.jpg" alt="Rental Car" class="rental-image">
+            </div>
+            <div class="content">
+              <p>Modelinizi seçin.</p>
+                <h2>İcarəyə 15% endirim qazanın!</h2>
+               
+            </div>
+        </section>
+        
+        
+        <section class="home-section5">
+          <div class="container">
+            <div class="section5-bottom">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 ">
+                  <div class="card1-img">
+                    <img src="./assets/img/content-bottom-location.png" alt="">
+                  </div>
+                  <div class="card-text">
+                    <a href="https://maps.app.goo.gl/BiraJu8YX1WmkHM56">
+                    <h1>Fərhad Əliyev küçəsi</h1>
+                      <span>Gəncə şəhəri </span>
+                      </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 " >
+                  <div class="card2-img">
+                    <img src="./assets/img/content-bottom-tel.png" alt="">
+                  </div>
+                  <div class="card-text">
+                    <a href="tel:+994552965450"><h1>Telefon:(+994) 055 296 54 50</h1></a>
+                   <a href="mailto:mamedovrent999@gmail.com"> <h1>Email:mamedovrent999@gmail.com</h1></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 ">
+                  <div class="card3-img">
+                    <img src="./assets/img/content-bottom-time.png" alt="">
+                  </div>
+                  <div class="card-text">
+                    <h1 style="color: white;">Həftənin hər günü</h1>
+                    <span style="color: white;">10:00-20:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <footer>
+         <div class="container">
+            <div class="row">
+              <div class="footer-left col-lg-4 col-md-12">
+                <span>Mamedov Rent A Car</span>
+                <a href="tel:+994552965450"><h1 style="font-weight: 800;">Çağrı Mərkəzi :(+994) 055 296 54 50</h1></a>
+              </div>
+              <div class="footer-com col-lg-4 col-md-12">
+                <h1>Menyu</h1>
+                <a href="./aboutus.html">Haqqımızda</a>
+                <a href="./service.html">Xidmətlər</a>
+                <a href="./contact.html">Əlaqə</a>
+              </div>
+              <div class="footer-right col-lg-4 col-md-12">
+                <h1>Bizi izləyin</h1>
+                <a href="https://www.instagram.com/gence_rentacar/profilecard/?igsh=OW9wZ2Z0NXR1em90 " target="_blank"><i class="fa-brands fa-instagram"></i>İnstagram</a>
+                <a href="https://www.tiktok.com/@gence_rentacar_?_t=ZS-8sjfUxkzvVJ&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i>Tiktok</a>
+                <a href=" https://wa.me/994552965450" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+              </div>
+            </div>
+         </div>
+        </footer>
+        <hr>
+        <img src="./assets/img/prius.png" alt="">
+      <div class="container">
+        <p style="color: white;text-align: center; font-size: 18px;">Created & Designed by Nazarli</p>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/img/logo.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/scss//main.css">
+    <title>Mamedov Rent A Car</title>
+</head>
+<body>
+    <div class="login row">
+      <div class="login-img col-6" style="padding: 0; position: relative;">
+        <img src="./assets/img/log.jpg" alt="" class="img-fluid">
+        <a href="./index.html" class="btn btn-light back-btn">
+            <i class="fa-solid fa-arrow-left"></i><span> Geri dön </span>
+        </a>
+    </div>
+    
+      <div class="login-form col-6">
+            <section class="forms-section">
+              <span style="color: white; font-size: 30px;">
+                  <span style="color: red;">Mamedov</span> <br> RentACar
+              </span>
+              <div class="forms">
+                  <div class="form-wrapper is-active">
+                      <button type="button" class="switcher switcher-login">
+                          Login
+                          <span class="underline"></span>
+                      </button>
+                      <form class="form form-login">
+                          <fieldset>
+                              <legend>Please, enter your email and password for login.</legend>
+                              <div class="input-block">
+                                  <label for="login-email">E-mail</label>
+                                  <input id="login-email" type="email" required>
+                              </div>
+                              <div class="input-block">
+                                  <label for="login-password">Password</label>
+                                  <input id="login-password" type="password" required>
+                              </div>
+                          </fieldset>
+                          <button type="submit" class="btn-login">Login</button>
+                          <p>Hesabınız yoxdur? <br> <br><a href="#signup" onclick="showSignupForm()">Qeydiyyatdan keçin</a></p>
+                      </form>
+                  </div>
+                  <div class="form-wrapper" id="signup">
+                      <button type="button" class="switcher switcher-signup">
+                          Sign Up
+                          <span class="underline"></span>
+                      </button>
+                      <form class="form form-signup">
+                          <fieldset>
+                              <legend>Please, enter your email, password, and password confirmation for sign up.</legend>
+                              <div class="input-block">
+                                  <label for="signup-email">E-mail</label>
+                                  <input id="signup-email" type="email" required>
+                              </div>
+                              <div class="input-block">
+                                  <label for="signup-password">Password</label>
+                                  <input id="signup-password" type="password" required>
+                              </div>
+                              <div class="input-block">
+                                  <label for="signup-password-confirm">Confirm password</label>
+                                  <input id="signup-password-confirm" type="password" required>
+                              </div>
+                          </fieldset>
+                          <button type="submit" class="btn-signup">Continue</button>
+                          <p>Artıq hesabınız var? <br> <br><a href="" onclick="showloginForm()">Daxil olun</a></p>
+                      
+                      </form>
+                  </div>
+              </div>
+          </section>
+          
+          
+           </div>
+    </div>
+
+          <script>
+            // Function to switch to the signup form when the link is clicked
+            function showSignupForm() {
+              document.querySelector('.form-wrapper.is-active').classList.remove('is-active');
+              document.querySelector('#signup').classList.add('is-active');
+            }
+          </script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/img/logo.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="./assets/scss//main.css">
+    <title>Mamedov Rent A Car</title>
+</head>
+<body>
+
+    <div class="contact">
+      <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-left logos">
+                <span>Mamedov Rent A Car</span>
+                </div>
+                <div class="header-top-right">
+                    <a href="tel:+994 055 296 54 50"><i class="fa-solid fa-phone"></i><span >+994 055 296 54 50</span></a>
+                    <span class="line">|</span>
+                    <a href="https://maps.app.goo.gl/BiraJu8YX1WmkHM56"><i class="fa-solid fa-location-dot"></i><span>Gəncə şəhər Fərhad Əliyev küçəsi </span></a>
+                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+         <div class="container">
+          <div class=" logo" style="font-size: 30px; color: white;display: none;">
+            Mamedov Rent A Car
+            </div>
+            
+             <div class="header-bottom-left">
+               <nav>
+                <ul>
+                    <li><a href="./index.html" >əsas səhifə</a></li>
+                    <li><a href="./cars.html"   >Maşınlar</a></li>
+                    <li><a href="./favorites.html">Favorilər</a></li>
+                    <li><a href="./service.html">Xidmətlər</a></li>
+                    <li><a href="./aboutus.html">Haqqımızda</a></li>
+                    <li><a href="./contact.html" style="color: red;">əlaqə</a></li>
+                  
+                </ul>
+               </nav>
+             </div>
+             <div class="burger-menu" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Mobil Menyu -->
+<div class="mobile-menu" id="mobileMenu">
+<span class="close-btn" onclick="toggleMenu()">✖</span>
+<ul>
+  <li><a href="./index.html" >Əsas səhifə</a></li>
+  <li><a href="./cars.html" >Maşınlar</a></li>
+  <li><a href="./favorites.html">Favorilər</a></li>
+  <li><a href="./service.html">Xidmətlər</a></li>
+  <li><a href="./aboutus.html">Haqqımızda</a></li>
+  <li><a href="./contact.html"  style="color: red;">Əlaqə</a></li>
+</ul>
+</div>
+          <section class="contact-section1" data-aos="fade-down" >
+                <img src="./assets/img/contact img.jpg" alt="">
+          </section>
+          <section class="contact-section2 row ">
+            <div class="left col-6" data-aos="fade-left" >
+                <img src="./assets/img/h3-img-6.jpg" alt="Image 1" class="img1"  >
+                <img src="./assets/img/h3-img-2.jpg" alt="Image 2" class="img2">
+            </div>
+            <div class="right col-6" data-aos="fade-right">
+                <h2>Biz Sizin Rahatlığınız və Təhlükəsizliyinizə önəm veririk</h2>
+                <p>Sadəcə ən yaxşısı</p>
+                <a href="./cars.html" class="btn btn-outline-danger">RENT NOW</a>
+            </div>
+         </section>
+         
+            <section class="contact-section3">
+                <div class="container row p-0">
+                 <div class="contact-section3-right col-5">
+                      <form>
+                        <h1>Contact Us</h1>
+                            <input type="text" class="form-control" id="exampleInputname1" placeholder="Name">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <textarea name="" id="" rows="15" cols="78" placeholder=" Message:"></textarea>
+                            <button type="submit" class="btn btn-danger">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-section3-left col-6">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3025.3093205745745!2d46.364301876024626!3d40.689184771397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQxJzIxLjEiTiA0NsKwMjInMDAuOCJF!5e0!3m2!1sen!2saz!4v1738770197585!5m2!1sen!2saz" width="800"  height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                </div>
+            </section>
+        <hr>
+        <footer>
+          <div class="container">
+             <div class="row">
+               <div class="footer-left col-lg-4 col-md-12">
+                 <span>Mamedov Rent A Car</span>
+                 <a href="tel:+994552965450"><h1 style="font-weight: 800;">Çağrı Mərkəzi :(+994) 055 296 54 50</h1></a>
+               </div>
+               <div class="footer-com col-lg-4 col-md-12">
+                 <h1>Menyu</h1>
+                 <a href="./aboutus.html">Haqqımızda</a>
+                 <a href="./service.html">Xidmətlər</a>
+                 <a href="./contact.html">Əlaqə</a>
+               </div>
+               <div class="footer-right col-lg-4 col-md-12">
+                 <h1>Bizi izləyin</h1>
+                 <a href="https://www.instagram.com/gence_rentacar/profilecard/?igsh=OW9wZ2Z0NXR1em90 " target="_blank"><i class="fa-brands fa-instagram"></i>İnstagram</a>
+                 <a href="https://www.tiktok.com/@gence_rentacar_?_t=ZS-8sjfUxkzvVJ&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i>Tiktok</a>
+                 <a href=" https://wa.me/994552965450" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+               </div>
+             </div>
+          </div>
+         </footer>
+        <hr>
+      <div class="container">
+        <p style="color: white;text-align: center; font-size: 18px;">Created & Designed by Nazarli</p>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

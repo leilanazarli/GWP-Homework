@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/img/logo.jpeg">
+    <!-- MDB CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet"/>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/scss//main.css">
+    <title>Mamedov Rent A Car</title>
+</head>
+<body>
+    <div class="car-about">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top-left logos">
+                    <span>Mamedov Rent A Car</span>
+                    </div>
+                    <div class="header-top-right">
+                        <a href="tel:+994 055 296 54 50"><i class="fa-solid fa-phone"></i><span >+994 055 296 54 50</span></a>
+                        <span class="line">|</span>
+                        <a href="https://maps.app.goo.gl/BiraJu8YX1WmkHM56"><i class="fa-solid fa-location-dot"></i><span>Gəncə şəhər Fərhad Əliyev küçəsi </span></a>
+                        <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+             <div class="container">
+              <div class=" logo" style="font-size: 30px; color: white;display: none;">
+                Mamedov Rent A Car
+                </div>
+                
+                 <div class="header-bottom-left">
+                   <nav>
+                    <ul>
+                        <li><a href="./index.html" >əsas səhifə</a></li>
+                        <li><a href="./cars.html">Maşınlar</a></li>
+                        <li><a href="./favorites.html">Favorilər</a></li>
+                        <li><a href="./service.html">Xidmətlər</a></li>
+                        <li><a href="./aboutus.html" style="color: red;">Haqqımızda</a></li>
+                        <li><a href="./contact.html">əlaqə</a></li>
+                      
+                    </ul>
+                   </nav>
+                 </div>
+                 <div class="burger-menu" onclick="toggleMenu()">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Mobil Menyu -->
+    <div class="mobile-menu" id="mobileMenu">
+    <span class="close-btn" onclick="toggleMenu()">✖</span>
+    <ul>
+      <li><a href="./index.html" >Əsas səhifə</a></li>
+      <li><a href="./cars.html"  style="color: red;">Maşınlar</a></li>
+      <li><a href="./favorites.html">Favorilər</a></li>
+      <li><a href="./service.html">Xidmətlər</a></li>
+      <li><a href="./aboutus.html">Haqqımızda</a></li>
+      <li><a href="./contact.html">Əlaqə</a></li>
+    </ul>
+    </div>
+        <section class="car-about-section1" >
+            <div class="car-about-video">
+                <!-- <iframe width="560" height="315" class="car-video" src="https://www.youtube.com/embed/4tHkkFwCcLs" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe> -->
+              </div>
+            <div class="container">
+             <div class="car-about-picture row" >
+                <h1 class="car-about-name">Kia Optima</h1>
+                <div class=" container" >
+               
+                    <div class="carousel-container">
+                        <!-- <div class="container ">
+                            <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./assets/img/home img 1.jpg" class="d-block w-100" alt="Image 1">
+                                        <div class="icon-container">
+                                            <span onclick="toggleHeart(this)">❤️</span>
+                                            <span onclick="copyLink('./assets/img/home img 1.jpg')">🔗</span>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/home img 2.jpg" class="d-block w-100" alt="Image 2">
+                                        <div class="icon-container">
+                                            <span onclick="toggleHeart(this)">❤️</span>
+                                            <span onclick="copyLink('./assets/img/home img 2.jpg')">🔗</span>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/home img 1.jpg" class="d-block w-100" alt="Image 3">
+                                        <div class="icon-container">
+                                            <span onclick="toggleHeart(this)">❤️</span>
+                                            <span onclick="copyLink('./assets/img/home img 1.jpg')">🔗</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                    
+                            <div class="mt-3 d-flex justify-content-center carousel-thumbnails">
+                                <img src="./assets/img/home img 1.jpg" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active-thumbnail">
+                                <img src="./assets/img/home img 2.jpg" data-bs-target="#carCarousel" data-bs-slide-to="1">
+                                <img src="./assets/img/home img 1.jpg" data-bs-target="#carCarousel" data-bs-slide-to="2">
+                            </div>
+                        </div> -->
+                    
+                    
+                </div>
+                    <div class="supplier-booking-container col-2">
+                    <div class="supplier-card ">
+                        <div class="logo">
+                            <img src="./assets/img/logo.jpeg" alt="EKAR Logo">
+                            <p>Mamedov Rent A Car</p>
+                        </div>
+                        <h2 class="title">BİRBAŞA REZERVASYON EDİN</h2>
+                        <div class="action-buttons">
+                            <a href="tel:+994 055 296 54 50" class="call-button">📞</a>
+                            <a href="" class="whatsapp-button">WhatsApp</a>
+                        </div>
+                        <div class="pricing">
+                            <div class="price-item">
+                                <span class="price">AZN 200</span>
+                                <span class="duration">/ gün</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price">AZN 1200</span>
+                                <span class="duration">/ Həftə</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price">AZN 4800</span>
+                                <span class="duration">/ Ay </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-section">
+                    <div class="section-header">
+                            <span></span>
+                            <h3>BOOK ONLINE</h3>
+                            <span></span>
+                    </div>
+                    <a href="#" class="reserve-button" onclick="openBookingForm()">RESERVE NOW</a>
+                    </div>
+                </div>
+                </div>    
+             </div>
+             
+            <!-- Booking Form -->
+                <div class="booking-form-container " id="bookingForm">
+                    <div class="booking-form">
+                        <span class="close-button" onclick="closeBookingForm()">✖</span>
+                        <h2>Booking Now</h2>
+                        <span class="carname">Maşının adı:</span><p class="carNameFull">Mercedes Benz CLA 250 2022</p>
+                        <form>
+                            <!-- Personal Information -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name*</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                            
+                                <div class="col-md-6">
+                                    <label for="mobile" class="form-label">Mobile*</label>
+                                    <input type="tel" class="form-control" id="mobile" placeholder="Your Phone" required>
+                                </div>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                
+                            <!-- Booking Date -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="takeDate" class="form-label">Pick-Up Date</label>
+                                    <input type="date" class="form-control" id="takeDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="pickuphour" class="form-label">Pick-Up Hour</label>
+                                    <input type="time" class="form-control" id="pickuphour" required>
+                                </div>
+                            </div>
+                
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <label for="returnDate" class="form-label">Return Date</label>
+                                    <input type="date" class="form-control" id="returnDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="returnhour" class="form-label">Return Hour</label>
+                                    <input type="time" class="form-control" id="returnhour" required>
+                                </div>
+                            </div>
+                
+                            <!-- Booking Details -->
+                            <div class="mb-3 mt-3">
+                                <label for="booking-details" class="form-label">Booking Details</label>
+                                <select class="form-select" id="booking-details" required>
+                                    <option value="">-</option>
+                                    <option value="oturacaq">Uşaq oturacağı</option>
+                                    <option value="driver">Sürücü</option>
+                                </select>
+                            </div>
+                
+                            <!-- Booking Location -->
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <label for="booking-location" class="form-label">Pick-Up Location</label>
+                                    <select class="form-select" id="booking-location" required>
+                                        <option value="">-</option>
+                                        <option value="offices">Main offices</option>
+                                        <option value="airport">Airport (+10 AZN)</option>
+                                    </select>
+                                </div>
+                            
+                                <div class="col-md-6">
+                                    <label for="dropoff-location" class="form-label">Drop-Off Location</label>
+                                    <select class="form-select" id="dropoff-location" required>
+                                        <option value="">-</option>
+                                        <option value="offices">Main offices</option>
+                                        <option value="airport">Airport (+10 AZN)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Booking Price -->
+                            <div class="mb-3">
+                                <label class="form-label">Booking Price</label>
+                                <p class="booking-result border p-2 rounded bg-light">Total Price: - AZN</p>
+                            </div>
+                            <!-- Message -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Your message..."></textarea>
+                            </div>
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary w-100 book-now" >Book Now</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="car-about-price">
+                    <!-- <h1>Qiymət</h1>
+                    <div class="row">
+                        <div class="col-5"><p>200 AZN <span>/günü</span></p></div> 
+                        <div class="col-2"><span class="line" style="color: white; font-size: 45px;">|</span></div>
+                        <div class="col-5"><p style="font-size: 30px;">Bir günlük kirayələmək mümkündür.</p></div>
+                    </div> -->
+                   
+                </div>
+             
+                <div class="car-about-title">
+                    <!-- <h1 class="about">Haqqında</h1>
+                    <p><span>Azərbaycanca</span><br>Gəncə şəhərində 2014-cü il Kia Optima ilə rahat və sərfəli səyahətə çıxın. Bu avtomobil güclü mühərrik və geniş iç məkanı ilə uzun məsafələr üçün mükəmməl seçimdir. 7/24 xidmətimizlə Kia Optima 2014-ü asanlıqla icarəyə götürün və Gəncə şəhərində komfortlu bir sürüşün zövqünü çıxarın.</p>
+                    <p><span>English</span><br>Take a comfortable and affordable trip with the 2014 Kia Optima in Ganja city. This car, with its powerful engine and spacious interior, is the perfect choice for long-distance travels. Take advantage of our 24/7 service and easily rent the 2014 Kia Optima to enjoy a smooth and comfortable ride in Ganja.</p>
+                    <p><span>Pусский</span><br>Отправьтесь в комфортное и выгодное путешествие на Kia Optima 2014 года в городе Гянджа. Этот автомобиль с мощным двигателем и просторным салоном — идеальный выбор для дальних поездок. Воспользуйтесь нашей круглосуточной услугой и легко арендуйте Kia Optima 2014 года, чтобы насладиться комфортной поездкой по Гяндже.</p>
+                     -->
+                </div>
+                <div class="car-about-special">
+                <h1>Özəllikləri</h1>
+                    <div class="features-grid row g-2">
+                        <div class="feature-item col-4">
+                            <img src="./assets/img/airbag.png" alt="Airbag Icon">
+                            <span>Airbag</span>
+                        </div>
+                        <div class="feature-item col-4">
+                            <img src="./assets/img/fm-tuner.png" alt="FM Radio Icon">
+                            <span>FM Radio</span>
+                        </div>
+                        <div class="feature-item col-4">
+                            <img src="./assets/img/window.png" alt="Power Windows Icon">
+                            <span>Power Windows</span>
+                        </div>
+                        <div class="feature-item col-4">
+                            <img src="./assets/img/sensor.png" alt="Sensor Icon">
+                            <span>Sensor</span>
+                        </div>
+                        <div class="feature-item col-4">
+                            <img src="./assets/img/speedometer.png" alt="Speed Km Icon">
+                            <span>Speed Km</span>
+                        </div>
+                        <div class="feature-item col-4">
+                            <img src="./assets/img/steering-wheel.png" alt="Steering Wheel Icon">
+                            <span>Steering Wheel</span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 50px 0;">
+                <div class="alsolikecars">
+                    <h1 style="text-align: center;"> Xoşlayacağın oxşar maşınlar</h1>
+                    <div class="row g-1 common-cards" >
+                        <!-- <div class="card col-3">
+                            <div class="card-img">
+                              <a href=""><img src="./assets/img/home img 1.jpg" class="car-img" ></a>
+                              <p class="cars-years">2020</p>
+                              <button id="heart" class="btn btn-dark" style="border-radius: 50%;"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                            <div class="card-body">
+                              <div class="card-title">
+                                <a href="" class="car-title-name">Ford Mustang 2016</a>
+                              </div>
+                              <div class="card-cars-about row">
+                                <div class="col-3">
+                                  <img src="./assets/img/seat.png"  title="passenger"  alt="passenger" style="filter: grayscale(100%);"> 
+                                  <span class="passenger">4</span>
+                                </div>
+                                <div class="col-3">
+                                  <img src="./assets/img/car-door (1).png" alt="">
+                                  <span class="car-door">2</span>
+                                </div>
+                                <div class="col-3">
+                                  <img src="./assets/img/motor.png" alt="">
+                                  <span class="gear-stick">1.4</span>
+                                </div>
+                                <div class="col-3">
+                                  <img src="./assets/img/transport.png" alt="">
+                                  <span class="car-type">SUV</span>
+                                </div>
+                              </div>
+                              <div class="card-cars-price">
+                                <button class="btn btn-danger" style="border-radius: 55px;" >Rent Now</button>
+                                <p><span class="car-price">200</span> ₼ /günü</p>
+                              </div>
+                            </div>
+                          </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <div class="container">
+               <div class="row">
+                 <div class="footer-left col-lg-4 col-md-12">
+                   <span>Mamedov Rent A Car</span>
+                   <a href="tel:+994552965450"><h1 style="font-weight: 800;">Çağrı Mərkəzi :(+994) 055 296 54 50</h1></a>
+                 </div>
+                 <div class="footer-com col-lg-4 col-md-12">
+                   <h1>Menyu</h1>
+                   <a href="./aboutus.html">Haqqımızda</a>
+                   <a href="./service.html">Xidmətlər</a>
+                   <a href="./contact.html">Əlaqə</a>
+                 </div>
+                 <div class="footer-right col-lg-4 col-md-12">
+                   <h1>Bizi izləyin</h1>
+                   <a href="https://www.instagram.com/gence_rentacar/profilecard/?igsh=OW9wZ2Z0NXR1em90 " target="_blank"><i class="fa-brands fa-instagram"></i>İnstagram</a>
+                   <a href="https://www.tiktok.com/@gence_rentacar_?_t=ZS-8sjfUxkzvVJ&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i>Tiktok</a>
+                   <a href=" https://wa.me/994552965450" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+                 </div>
+               </div>
+            </div>
+           </footer>
+        <hr>
+      <div class="container">
+        <p style="color: white;text-align: center; font-size: 18px;">Created & Designed by Nazarli</p>
+      </div>
+      
+      <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/994552965450" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </div>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- MDB JavaScript -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+ <!-- Bootstrap JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/car-about.js"></script>
+
+</body>
+</html>
